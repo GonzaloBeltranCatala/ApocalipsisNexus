@@ -28,7 +28,7 @@ public class Raton : MonoBehaviour
 
         transform.GetChild(0).localRotation = Quaternion.Euler(xAngle, 0, 0);
 
-        xAngle = Mathf.Clamp(xAngle - aimInput.y * aimSensitivity.y * Time.deltaTime, -90, 90);
+        xAngle = Mathf.Clamp(xAngle - aimInput.y * aimSensitivity.y * Time.deltaTime, -15, 15);
 
 
 
