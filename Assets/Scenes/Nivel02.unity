@@ -688,15 +688,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1040878379}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.79, y: 1, z: 0.19}
+  m_LocalRotation: {x: -0, y: 0.30898076, z: -0, w: 0.9510683}
+  m_LocalPosition: {x: -4.8699293, y: 1, z: 0.21596698}
   m_LocalScale: {x: 1, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1822689331}
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 35.996, z: 0}
 --- !u!1 &1100314956 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100110, guid: bff429107601444d59c67940e6ad78c4, type: 3}
@@ -1185,6 +1185,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Robot_Scout
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c253b4e8b24a3e441b8388fa411c9b83, type: 3}
+      propertyPath: m_TagString
+      value: Municion
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c253b4e8b24a3e441b8388fa411c9b83, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1199,7 +1203,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c253b4e8b24a3e441b8388fa411c9b83, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -16.38
+      value: -8.83
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c253b4e8b24a3e441b8388fa411c9b83, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1247,6 +1251,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: c253b4e8b24a3e441b8388fa411c9b83, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1754501464}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: c253b4e8b24a3e441b8388fa411c9b83, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1754501465}
   m_SourcePrefab: {fileID: 100100000, guid: c253b4e8b24a3e441b8388fa411c9b83, type: 3}
 --- !u!1 &1504268240
 GameObject:
@@ -1510,10 +1517,10 @@ SphereCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
-  m_Radius: 0.4381735
-  m_Center: {x: 0, y: 1.305376, z: 0.011778504}
+  m_Radius: 0.47220397
+  m_Center: {x: 0, y: 1.305376, z: 0.04580897}
 --- !u!54 &1754501463
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1559,6 +1566,27 @@ MonoBehaviour:
   grado: 0
   target: {fileID: 1040878379}
   atacando: 0
+--- !u!65 &1754501465
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754501457}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.63962, y: 0.80409396, z: 0.876347}
+  m_Center: {x: 0, y: 1.305376, z: 0.011778504}
 --- !u!1 &1780926195
 GameObject:
   m_ObjectHideFlags: 0
@@ -1719,14 +1747,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1822689330}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: 0.95591503, z: -0, w: 0.29364365}
   m_LocalPosition: {x: 0, y: 0.397, z: 0.136}
   m_LocalScale: {x: 1, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1040878387}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 145.848, z: 0}
 --- !u!81 &1822689332
 AudioListener:
   m_ObjectHideFlags: 0
