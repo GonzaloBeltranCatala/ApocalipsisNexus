@@ -1,47 +1,59 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Net;
 using UnityEngine;
 
 public class DisparosTorreta : MonoBehaviour
 {
-    public GameObject bullet;
-    [SerializeField]
-    private float _timer = 2f;
-    private float timerCount = 0f;
+    public Transform playerTransform; // Transform del jugador
+    public GameObject projectilePrefab; // Prefab del proyectil 
+    public float fireRate = 1f; // Frecuencia de disparo
+    public float range = 10f; // Alcance de detección
+    public LineRenderer lineRenderer; // Línea de disparo
+    private float timeToFire = 0f;
 
-    [SerializeField]
-    private int _counter;
-    private int _maxCounter = 20;
+    public float force = 100f; // Fuerza aplicada a la bala
 
-    // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(FireBullets());    
+        // Obtener el componente Rigidbody
+        Rigidbody rb = GetComponent<Rigidbody>();
+
+        // Aplicar una fuerza en la dirección forward
+        rb.AddForce(transform.forward * force);
     }
 
-    // Update is called once per frame
     void Update()
-    {/*
-       timerCount += Time.deltatime;
-       if(timerCount>timer)
-       {
-            Instantiate(bullet, transform.position, transform.rotation);
-            timerCount = 0f;
-       }*/
-    }
-    
-
-
-    IEnumerator FireBullets()
     {
-        Debug.Log("Inicio coroutine");
-        for(int i=0; i < _maxCounter; i++)
+        // Detección del jugador
+        Vector3 directionToPlayer = playerTransform.position - transform.position;
+        float distanceToPlayer = directionToPlayer.magnitude;
+        if (distanceToPlayer <= range)
         {
-            _counter++;
-            Instantiate(bullet, transform.position, transform.rotation);
-            yield return new WaitForSeconds(_timer);
-        }
-        Debug.Log("Fin coroutine");
+            // Rotar hacia el jugador
+            transform.LookAt(playerTransform);
 
+            // Actualizar la línea de disparo
+            lineRenderer.enabled = true;
+            lineRenderer.SetPosition(0, transform.position);
+            lineRenderer.SetPosition(1, playerTransform.position);
+
+            // Disparar si ha pasado el tiempo de espera
+            if (Time.time >= timeToFire)
+            {
+                timeToFire = Time.time + 1f / fireRate;
+                ShootProjectile();
+            }
+        }
+        else
+        {
+            lineRenderer.enabled = false;
+        }
+    }
+
+    void ShootProjectile()
+    {
+        // Instanciar el proyectil (rayo)
+        Instantiate(projectilePrefab, transform.position + transform.forward, transform.rotation);
     }
 }

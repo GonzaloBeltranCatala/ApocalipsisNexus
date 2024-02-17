@@ -4,28 +4,12 @@ using UnityEngine;
 
 public class Torreta : MonoBehaviour
 {
-    [SerializeField]
-    public Transform _target;
+    public float rotationSpeed = 100f; // Velocidad de rotación de la torreta
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        Vector3 targetOrientation = _target.position - transform.position;
-        Debug.DrawRay(transform.position, targetOrientation, Color.green);
-
-        //Orientar instantaneo
-        //transform.rotation = Quaternion.LookRotation(targetOrientation);
-
-        //Slerp
-        Quaternion targetOrientationQuaternion = Quaternion.LookRotation(targetOrientation);
-        transform.rotation = Quaternion.Slerp(transform.rotation, targetOrientationQuaternion, Time.deltaTime);
-
-
+        // Rotación sobre el eje Y
+        transform.Rotate(Vector3.up * rotationSpeed * Time.deltaTime);
     }
+
 }
