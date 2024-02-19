@@ -5223,6 +5223,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7056765277844349422, guid: ab6ad9a960c7de94b96d1f1f5bf6b1d1, type: 3}
+      propertyPath: scriptTienda
+      value: 
+      objectReference: {fileID: 238704426}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8549,6 +8553,10 @@ PrefabInstance:
       propertyPath: playerTransform
       value: 
       objectReference: {fileID: 885145506}
+    - target: {fileID: 3917467710107019984, guid: 5f9b95eecd960d34e9d8e890be13108d, type: 3}
+      propertyPath: scriptTienda
+      value: 
+      objectReference: {fileID: 238704426}
     - target: {fileID: 5435919096994855080, guid: 5f9b95eecd960d34e9d8e890be13108d, type: 3}
       propertyPath: m_Name
       value: RobotTorreta 2 (1)
@@ -11896,6 +11904,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7056765277844349422, guid: ab6ad9a960c7de94b96d1f1f5bf6b1d1, type: 3}
+      propertyPath: scriptTienda
+      value: 
+      objectReference: {fileID: 238704426}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17541,6 +17553,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7609733778886283626, guid: 295f3cdf5feade2418a060bec89e3cc3, type: 3}
+      propertyPath: scriptTienda
+      value: 
+      objectReference: {fileID: 238704426}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21074,6 +21090,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7056765277844349422, guid: ab6ad9a960c7de94b96d1f1f5bf6b1d1, type: 3}
+      propertyPath: scriptTienda
+      value: 
+      objectReference: {fileID: 238704426}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
