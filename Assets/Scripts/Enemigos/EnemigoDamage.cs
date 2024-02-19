@@ -1,18 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 
 public class EnemigoDamage : MonoBehaviour
 {
 
     private int vida = 10;
 
-    private int puntos = 5;
-
     public int puntosTotal;
 
-    public TextMeshProUGUI puntosText;
+    public Tienda scriptTienda;
+
+
+    private void Start()
+    {
+        scriptTienda = GameObject.Find("Tienda").GetComponent<Tienda>();
+    }
+    
+
 
     private void OnTriggerEnter(Collider collision)
     {
@@ -22,10 +27,9 @@ public class EnemigoDamage : MonoBehaviour
 
             if(vida <= 0)
             {
+               
+                scriptTienda.ActualizarPuntos();
 
-                puntosTotal = puntosTotal + puntos;
-
-                puntosText.text = "Puntos: " + puntosTotal;
 
                 Destroy(gameObject);
             }
