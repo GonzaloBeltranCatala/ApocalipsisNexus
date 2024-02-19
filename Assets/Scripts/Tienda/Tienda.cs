@@ -10,6 +10,7 @@ public class Tienda : MonoBehaviour
 
     public TextMeshProUGUI puntosText;
 
+   
 
     // Start is called before the first frame update
     void Start()
