@@ -27,6 +27,7 @@ public class MenuPausa : MonoBehaviour
                 Cursor.visible = true;
                 Cursor.lockState = CursorLockMode.None;
 
+                
             }
             else if (Pausa == true)
             {
