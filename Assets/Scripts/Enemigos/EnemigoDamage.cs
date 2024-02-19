@@ -10,6 +10,8 @@ public class EnemigoDamage : MonoBehaviour
 
     private int puntos = 5;
 
+    public int puntosTotal;
+
     public TextMeshProUGUI puntosText;
 
     private void OnTriggerEnter(Collider collision)
@@ -20,7 +22,10 @@ public class EnemigoDamage : MonoBehaviour
 
             if(vida <= 0)
             {
-                puntosText.text = "Puntos: " + puntos;
+
+                puntosTotal = puntosTotal + puntos;
+
+                puntosText.text = "Puntos: " + puntosTotal;
 
                 Destroy(gameObject);
             }

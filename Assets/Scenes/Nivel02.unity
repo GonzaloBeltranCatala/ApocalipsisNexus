@@ -320,6 +320,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 156b47afe52d7fb4e807f196199c9bae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puntosTotal: 0
   puntosText: {fileID: 612286644}
 --- !u!1 &591244067
 GameObject:
@@ -450,7 +451,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -200, y: 0}
+  m_AnchoredPosition: {x: -200, y: -70}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &612286644
@@ -764,6 +765,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 156b47afe52d7fb4e807f196199c9bae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puntosTotal: 0
   puntosText: {fileID: 612286644}
 --- !u!4 &1023778468 stripped
 Transform:
@@ -862,8 +864,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.15516792, y: 0.12213883, z: 0.13}
-  m_Center: {x: 0.017583845, y: 0.05799598, z: 0}
+  m_Size: {x: 0.1258325, y: 0.12213883, z: 0.14773375}
+  m_Center: {x: 0.0029160513, y: 0.05799598, z: 0.008866633}
 --- !u!54 &1100314958
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -927,6 +929,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 156b47afe52d7fb4e807f196199c9bae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puntosTotal: 0
   puntosText: {fileID: 612286644}
 --- !u!1001 &1228342683
 PrefabInstance:
@@ -1118,7 +1121,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400110, guid: bff429107601444d59c67940e6ad78c4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -17
+      value: 12.29
       objectReference: {fileID: 0}
     - target: {fileID: 400110, guid: bff429107601444d59c67940e6ad78c4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1302,7 +1305,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 200, y: 0}
+  m_AnchoredPosition: {x: 200, y: 70}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1524694288
@@ -1437,7 +1440,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 200, y: 0}
+  m_AnchoredPosition: {x: 200, y: -70}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1560812839
@@ -1667,6 +1670,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 156b47afe52d7fb4e807f196199c9bae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puntosTotal: 0
   puntosText: {fileID: 612286644}
 --- !u!1 &1798523796 stripped
 GameObject:
@@ -1956,7 +1960,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -70}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2005173256
