@@ -7,16 +7,7 @@ public class EnemigoDamage : MonoBehaviour
 
     private int vida = 10;
 
-    public int puntosTotal;
-
     public Tienda scriptTienda;
-
-
-    private void Start()
-    {
-        scriptTienda = GameObject.Find("Tienda").GetComponent<Tienda>();
-    }
-    
 
 
     private void OnTriggerEnter(Collider collision)

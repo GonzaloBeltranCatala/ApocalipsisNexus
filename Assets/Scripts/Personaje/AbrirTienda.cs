@@ -40,6 +40,8 @@ public class AbrirTienda : MonoBehaviour
                 shopText.SetActive(false);
 
                 botonE = true;
+
+                Time.timeScale = 0f;
             }
             else if(botonE == true)
             {
@@ -48,6 +50,8 @@ public class AbrirTienda : MonoBehaviour
                 shopText.SetActive(true);
 
                 botonE = false;
+
+                Time.timeScale = 1f;
             }
 
 
