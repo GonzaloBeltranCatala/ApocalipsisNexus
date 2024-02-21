@@ -42,6 +42,8 @@ public class AbrirTienda : MonoBehaviour
                 botonE = true;
 
                 Time.timeScale = 0f;
+
+                Cursor.lockState = CursorLockMode.None;
             }
             else if(botonE == true)
             {
@@ -52,6 +54,8 @@ public class AbrirTienda : MonoBehaviour
                 botonE = false;
 
                 Time.timeScale = 1f;
+
+                Cursor.lockState = CursorLockMode.Locked;
             }
 
 

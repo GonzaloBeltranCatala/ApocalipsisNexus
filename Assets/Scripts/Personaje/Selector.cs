@@ -53,7 +53,7 @@ public class Selector : MonoBehaviour
 
     }
 
-    void ArmaSeleccionada()
+    public void ArmaSeleccionada()
     {
         int i = 0;
         foreach(Transform arma in transform)

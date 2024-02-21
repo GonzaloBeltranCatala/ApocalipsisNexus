@@ -10,7 +10,14 @@ public class Tienda : MonoBehaviour
 
     public TextMeshProUGUI puntosText;
 
-   
+    public GameObject arma01;
+
+    public GameObject arma01Texto;
+
+    public Transform personaje;
+
+    public Transform texto;
+
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +36,14 @@ public class Tienda : MonoBehaviour
         puntos = puntos + 5;
         puntosText.text = "Puntos: " + puntos;
     }
+
+    public void ComprarArma()
+    {
+        Instantiate(arma01, personaje);
+
+        Instantiate(arma01Texto, texto);
+    }
+    
 
 
 }
