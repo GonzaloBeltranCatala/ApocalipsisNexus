@@ -21,41 +21,47 @@ public class Disparar : MonoBehaviour
 
     private int caja = 10;
 
+    public AbrirTienda scriptTienda;
+
 
     private void OnDisparar()
     {
 
-        if (scriptSelector.armas == 0)
+        if (scriptTienda.abrirTienda == false)
         {
-            if (municionPistola > 0)
+
+
+            if (scriptSelector.armas == 0)
             {
+                if (municionPistola > 0)
+                {
 
-                //que voy a instanciar,donde, no rota
-                Instantiate(prefab, insPoint.position, insPoint.rotation);
+                    //que voy a instanciar,donde, no rota
+                    Instantiate(prefab, insPoint.position, insPoint.rotation);
 
-                municionPistola--;
-                municionPistola--;
-                municionPistolaText.text = municionPistola + "";
+                    municionPistola--;
+                    municionPistola--;
+                    municionPistolaText.text = municionPistola + "";
+                }
+
             }
 
-        }
-
-        if (scriptSelector.armas == 1)
-        {
-            if (municion > 0)
+            if (scriptSelector.armas == 1)
             {
+                if (municion > 0)
+                {
 
-                //que voy a instanciar,donde, no rota
-                Instantiate(prefab, insPoint.position, insPoint.rotation);
+                    //que voy a instanciar,donde, no rota
+                    Instantiate(prefab, insPoint.position, insPoint.rotation);
 
-                municion--;
-                municion--;
-                municionText.text = municion + "";
+                    municion--;
+                    municion--;
+                    municionText.text = municion + "";
+                }
             }
+
+
         }
-
-
-
 
 
     }

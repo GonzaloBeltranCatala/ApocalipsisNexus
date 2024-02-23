@@ -14,9 +14,11 @@ public class Tienda : MonoBehaviour
 
     public GameObject arma01Texto;
 
-    public Transform personaje;
+    public Transform padreArma;
 
-    public Transform texto;
+    public Transform padreTexto;
+
+    public Transform insPointArma;
 
 
     // Start is called before the first frame update
@@ -39,11 +41,19 @@ public class Tienda : MonoBehaviour
 
     public void ComprarArma()
     {
-        Instantiate(arma01, personaje);
 
-        Instantiate(arma01Texto, texto);
+       // Instantiate(arma01, insPointArma.position, Quaternion.identity, padreArma).SetActive(false);
+
+        Instantiate(arma01, insPointArma.position, Quaternion.Euler(84.265f,0,0), padreArma).SetActive(false);
+
+        arma01Texto.transform.SetParent(padreTexto);
+
+        arma01Texto.SetActive(false);
+
+
+
     }
-    
+
 
 
 }
