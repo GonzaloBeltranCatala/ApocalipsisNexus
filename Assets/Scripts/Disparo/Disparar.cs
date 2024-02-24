@@ -9,6 +9,8 @@ public class Disparar : MonoBehaviour
 
     public GameObject prefab;
 
+    public GameObject prefabLaser;
+
     public Transform insPoint;
 
     public TextMeshProUGUI municionPistolaText;
@@ -17,11 +19,14 @@ public class Disparar : MonoBehaviour
 
     public int municionPistola = 60;
 
-    public int municion = 200;
+    public int municionLaser = 10;
 
     private int caja = 10;
 
     public AbrirTienda scriptTienda;
+
+
+    private Vector2 moveInput;
 
 
     private void OnDisparar()
@@ -29,8 +34,6 @@ public class Disparar : MonoBehaviour
 
         if (scriptTienda.abrirTienda == false)
         {
-
-
             if (scriptSelector.armas == 0)
             {
                 if (municionPistola > 0)
@@ -46,24 +49,27 @@ public class Disparar : MonoBehaviour
 
             }
 
-            if (scriptSelector.armas == 1)
-            {
-                if (municion > 0)
-                {
-
-                    //que voy a instanciar,donde, no rota
-                    Instantiate(prefab, insPoint.position, insPoint.rotation);
-
-                    municion--;
-                    municion--;
-                    municionText.text = municion + "";
-                }
-            }
-
-
         }
 
 
+    }
+  
+      
+    private void OnDispararHold(){
+
+            if (scriptSelector.armas == 1)
+            {
+                if (municionLaser > 0)
+                {
+
+                    //que voy a instanciar,donde, no rota
+                    Instantiate(prefabLaser, insPoint.position, insPoint.rotation);
+
+                    municionLaser--;
+                    municionText.text = municionLaser + "";
+                }
+            }
+        
     }
 
     private void OnTriggerEnter(Collider collision)
@@ -79,8 +85,8 @@ public class Disparar : MonoBehaviour
 
             if (scriptSelector.armas == 1)
             {
-                municion = municion + caja;
-                municionText.text = municion + "";
+                municionLaser = municionLaser + caja;
+                municionText.text = municionLaser + "";
 
             }
 

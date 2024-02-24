@@ -9,6 +9,7 @@ TagManager:
   - Enemigo
   - Tienda
   - Arma
+  - Laser
   layers:
   - Default
   - TransparentFX

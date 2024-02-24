@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemigoDamage : MonoBehaviour
 {
 
-    private int vida = 10;
+    private int vida = 100;
 
     public Tienda scriptTienda;
 
@@ -14,7 +14,7 @@ public class EnemigoDamage : MonoBehaviour
     {
         if (collision.CompareTag("Bala"))
         {
-            vida = vida - 2;
+            vida = vida - 20;
 
             if(vida <= 0)
             {
@@ -25,6 +25,21 @@ public class EnemigoDamage : MonoBehaviour
                 Destroy(gameObject);
             }
         }
+
+        if (collision.CompareTag("Laser"))
+        {
+            vida = vida - 50;
+
+            if(vida <= 0)
+            {
+               
+                scriptTienda.ActualizarPuntos();
+
+
+                Destroy(gameObject);
+            }
+        }
+
 
 
     }
