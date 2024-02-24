@@ -14,7 +14,7 @@ public class EnemigoDamage : MonoBehaviour
     {
         if (collision.CompareTag("Bala"))
         {
-            vida = vida - 1;
+            vida = vida - 2;
 
             if(vida <= 0)
             {

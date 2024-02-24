@@ -14,11 +14,17 @@ public class Tienda : MonoBehaviour
 
     public GameObject arma01Texto;
 
+    public GameObject arma01Boton;
+
+    public GameObject arma01Obtener;
+
     public Transform padreArma;
 
     public Transform padreTexto;
 
     public Transform insPointArma;
+
+
 
 
     // Start is called before the first frame update
@@ -42,7 +48,9 @@ public class Tienda : MonoBehaviour
     public void ComprarArma()
     {
 
-       // Instantiate(arma01, insPointArma.position, Quaternion.identity, padreArma).SetActive(false);
+        if(puntos >= 10 ){
+
+        // Instantiate(arma01, insPointArma.position, Quaternion.identity, padreArma).SetActive(false);
 
         Instantiate(arma01, insPointArma.position, Quaternion.Euler(84.265f,0,0), padreArma).SetActive(false);
 
@@ -50,7 +58,19 @@ public class Tienda : MonoBehaviour
 
         arma01Texto.SetActive(false);
 
+        puntos = puntos - 10;
 
+        puntosText.text = "Puntos: " + puntos;
+
+
+        arma01Boton.SetActive(false);
+        
+        arma01Obtener.SetActive(true);
+
+
+        }
+
+    
 
     }
 

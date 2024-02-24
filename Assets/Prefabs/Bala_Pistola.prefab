@@ -146,6 +146,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14b79ee5a62b4d94db5f56c1aaf9545d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  impacto: {fileID: 699319771052212481, guid: 11d6ce628e136414491bbd082196cb73, type: 3}
+  insPoint: {fileID: 7076781237616804061}
 --- !u!1 &4369610648127280609
 GameObject:
   m_ObjectHideFlags: 0
@@ -292,6 +294,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14b79ee5a62b4d94db5f56c1aaf9545d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  impacto: {fileID: 699319771052212481, guid: 11d6ce628e136414491bbd082196cb73, type: 3}
+  insPoint: {fileID: 2901052887983732241}
 --- !u!1 &5286242787994364987
 GameObject:
   m_ObjectHideFlags: 0
@@ -325,7 +329,7 @@ Transform:
   - {fileID: 7076781237616804061}
   - {fileID: 2901052887983732241}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &413662904361530333
 MonoBehaviour:
