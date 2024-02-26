@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class Salud : MonoBehaviour
 {
-    public TextMeshProUGUI saludText;
+    //public TextMeshProUGUI saludText;
+
+    public Slider vidaText;
 
     private int salud = 100;
 
@@ -22,7 +25,9 @@ public class Salud : MonoBehaviour
         {
             salud -= 10;
 
-            saludText.text = "Salud: " + salud;
+            vidaText.value = salud;
+
+           //saludText.text = "Salud: " + salud;
 
             if (salud <= 0)
             {

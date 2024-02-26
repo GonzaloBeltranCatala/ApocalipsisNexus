@@ -1,13 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemigoDamage : MonoBehaviour
 {
+    public Slider vidaText;
 
     private int vida = 100;
 
     public Tienda scriptTienda;
+
+    public GameObject muerte;
+
+    
 
 
     private void OnTriggerEnter(Collider collision)
@@ -16,9 +22,12 @@ public class EnemigoDamage : MonoBehaviour
         {
             vida = vida - 20;
 
-            if(vida <= 0)
+            vidaText.value = vida;
+
+            if (vida <= 0)
             {
-               
+                Instantiate(muerte);
+
                 scriptTienda.ActualizarPuntos();
 
 
@@ -30,7 +39,9 @@ public class EnemigoDamage : MonoBehaviour
         {
             vida = vida - 50;
 
-            if(vida <= 0)
+            vidaText.value = vida;
+
+            if (vida <= 0)
             {
                
                 scriptTienda.ActualizarPuntos();

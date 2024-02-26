@@ -166,7 +166,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400110, guid: bff429107601444d59c67940e6ad78c4, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 400110, guid: bff429107601444d59c67940e6ad78c4, type: 3}
       propertyPath: m_LocalScale.x
@@ -182,15 +182,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400110, guid: bff429107601444d59c67940e6ad78c4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.5
+      value: 54.19218
       objectReference: {fileID: 0}
     - target: {fileID: 400110, guid: bff429107601444d59c67940e6ad78c4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.43
+      value: 1.5237498
       objectReference: {fileID: 0}
     - target: {fileID: 400110, guid: bff429107601444d59c67940e6ad78c4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 12.29
+      value: 20.183628
       objectReference: {fileID: 0}
     - target: {fileID: 400110, guid: bff429107601444d59c67940e6ad78c4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -338,4 +338,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 156b47afe52d7fb4e807f196199c9bae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  vidaText: {fileID: 0}
   scriptTienda: {fileID: 0}
+  muerte: {fileID: 0}
+  insPoint: {fileID: 3757080455550402847}
+--- !u!4 &3757080455550402847 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400110, guid: bff429107601444d59c67940e6ad78c4, type: 3}
+  m_PrefabInstance: {fileID: 3757080455550278641}
+  m_PrefabAsset: {fileID: 0}

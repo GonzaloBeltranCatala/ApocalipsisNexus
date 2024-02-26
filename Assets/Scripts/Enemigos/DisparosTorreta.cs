@@ -14,6 +14,8 @@ public class DisparosTorreta : MonoBehaviour
 
     public float force = 100f; // Fuerza aplicada a la bala
 
+    public GameObject vida;
+
     void Start()
     {
         // Obtener el componente Rigidbody
@@ -30,6 +32,9 @@ public class DisparosTorreta : MonoBehaviour
         float distanceToPlayer = directionToPlayer.magnitude;
         if (distanceToPlayer <= range)
         {
+
+            vida.SetActive(true);
+
             // Rotar hacia el jugador
             transform.LookAt(playerTransform);
 
@@ -47,6 +52,8 @@ public class DisparosTorreta : MonoBehaviour
         }
         else
         {
+            vida.SetActive(false);
+
             lineRenderer.enabled = false;
         }
     }

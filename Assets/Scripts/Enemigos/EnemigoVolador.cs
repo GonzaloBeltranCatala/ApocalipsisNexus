@@ -12,6 +12,8 @@ public class EnemigoVolador : MonoBehaviour
     public GameObject target;
     public bool atacando;
 
+    public GameObject vida;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +25,8 @@ public class EnemigoVolador : MonoBehaviour
     {
         if (Vector3.Distance(transform.position, target.transform.position) > 8)
         {
-            
+            vida.SetActive(false);
+
             Cronometro += 1 * Time.deltaTime;
             if (Cronometro >= 4)
             {
@@ -51,6 +54,10 @@ public class EnemigoVolador : MonoBehaviour
         }
         else
         {
+
+            vida.SetActive(true);
+
+
             if (Vector3.Distance(transform.position, target.transform.position) > 1 && !atacando)
             {
                 var lookPos = target.transform.position - transform.position;
