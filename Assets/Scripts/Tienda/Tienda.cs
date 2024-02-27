@@ -50,11 +50,15 @@ public class Tienda : MonoBehaviour
 
         if(puntos >= 10 ){
 
-        //Instantiate(arma01, insPointArma.position, Quaternion.identity, padreArma).SetActive(false);
+            //Instantiate(arma01, insPointArma.position, Quaternion.identity, padreArma).SetActive(false);
 
-        Instantiate(arma01, insPointArma.position, Quaternion.Euler(0,0,0), padreArma).SetActive(false);
+            //Instantiate(arma01, insPointArma.position, Quaternion.Euler(0,0,0), padreArma).SetActive(false);
 
-        arma01Texto.transform.SetParent(padreTexto);
+            //Instantiate(arma01, padreArma, insPointArma ).SetActive(false);
+
+            Instantiate(arma01, insPointArma.position, padreArma.rotation, padreArma).SetActive(false);
+
+            arma01Texto.transform.SetParent(padreTexto);
 
         arma01Texto.SetActive(false);
 
