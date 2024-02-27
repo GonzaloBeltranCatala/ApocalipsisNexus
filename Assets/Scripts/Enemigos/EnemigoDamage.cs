@@ -11,7 +11,7 @@ public class EnemigoDamage : MonoBehaviour
 
     public Tienda scriptTienda;
 
-    public GameObject muerte;
+   // public GameObject muerte;
 
     
 
@@ -26,7 +26,7 @@ public class EnemigoDamage : MonoBehaviour
 
             if (vida <= 0)
             {
-                Instantiate(muerte);
+                //Instantiate(muerte);
 
                 scriptTienda.ActualizarPuntos();
 

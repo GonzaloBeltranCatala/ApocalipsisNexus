@@ -13,6 +13,8 @@ public class MovEnemigoSuelo : MonoBehaviour
     public GameObject target;
     public bool atacando;
 
+    public GameObject vida;
+
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +27,8 @@ public class MovEnemigoSuelo : MonoBehaviour
     {
         if (Vector3.Distance(transform.position, target.transform.position) > 7)
         {
+            vida.SetActive(false);
+
             ani.SetBool("Run", false);
             Cronometro += 1 * Time.deltaTime;
             if (Cronometro >= 4)
@@ -54,6 +58,9 @@ public class MovEnemigoSuelo : MonoBehaviour
         }
         else
         {
+
+            vida.SetActive(true);
+
             if (Vector3.Distance(transform.position, target.transform.position) > 2 && !atacando)
             {
                 var lookPos = target.transform.position - transform.position;
