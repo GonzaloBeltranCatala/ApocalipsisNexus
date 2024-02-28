@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class Raton : MonoBehaviour
 {
 
-    private Vector2 aimSensitivity = new Vector2(30, 30);
+    private Vector2 aimSensitivity = new Vector2(20, 20);
 
     private Vector2 aimInput;
 
@@ -28,7 +28,7 @@ public class Raton : MonoBehaviour
 
         transform.GetChild(0).localRotation = Quaternion.Euler(xAngle, 0, 0);
 
-        xAngle = Mathf.Clamp(xAngle - aimInput.y * aimSensitivity.y * Time.deltaTime, -15, 15);
+        xAngle = Mathf.Clamp(xAngle - aimInput.y * aimSensitivity.y * Time.deltaTime, -15, 0);
 
 
 

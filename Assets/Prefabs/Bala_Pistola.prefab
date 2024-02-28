@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6464401934421605320}
   - component: {fileID: 405217813368299571}
   - component: {fileID: 6167759701379511876}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bala_Arriba
   m_TagString: Bala
   m_Icon: {fileID: 0}
@@ -162,7 +162,7 @@ GameObject:
   - component: {fileID: 1609482931996147663}
   - component: {fileID: 4903184797750396926}
   - component: {fileID: 5509391977344328492}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bala_Abajo
   m_TagString: Bala
   m_Icon: {fileID: 0}
@@ -307,7 +307,7 @@ GameObject:
   - component: {fileID: 9046962701720308429}
   - component: {fileID: 413662904361530333}
   - component: {fileID: -4587863941202916397}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bala_Pistola
   m_TagString: Untagged
   m_Icon: {fileID: 0}
