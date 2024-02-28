@@ -37,13 +37,29 @@ public class EnemigoDamage : MonoBehaviour
 
         if (collision.CompareTag("Laser"))
         {
-            vida = vida - 50;
+            vida = vida - 75;
 
             vidaText.value = vida;
 
             if (vida <= 0)
             {
                
+                scriptTienda.ActualizarPuntos();
+
+
+                Destroy(gameObject);
+            }
+        }
+
+        if (collision.CompareTag("Estaca"))
+        {
+            vida = vida - 30;
+
+            vidaText.value = vida;
+
+            if (vida <= 0)
+            {
+                
                 scriptTienda.ActualizarPuntos();
 
 

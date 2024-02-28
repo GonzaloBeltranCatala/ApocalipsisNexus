@@ -34,6 +34,9 @@ public class Tienda : MonoBehaviour
     public GameObject arma02Obtener;
 
 
+    public GameObject textoObtener;
+
+
 
 
     // Start is called before the first frame update
@@ -81,6 +84,11 @@ public class Tienda : MonoBehaviour
         arma01Obtener.SetActive(true);
 
 
+        arma02Boton.SetActive(true);
+
+        textoObtener.SetActive(false);
+
+
         }
 
     
@@ -94,11 +102,11 @@ public class Tienda : MonoBehaviour
 
             //Instantiate(arma02, insPointArma.position, Quaternion.identity, padreArma).SetActive(false);
 
-            Instantiate(arma02, insPointArma.position, Quaternion.Euler(0,180,0), padreArma).SetActive(false);
+            //Instantiate(arma02, insPointArma.position, Quaternion.Euler(0,-83.15f,0), padreArma).SetActive(false);
 
             //Instantiate(arma01, padreArma, insPointArma ).SetActive(false);
 
-            //Instantiate(arma02, insPointArma.position, padreArma.rotation, padreArma).SetActive(false);
+            Instantiate(arma02, insPointArma.position, padreArma.rotation, padreArma).SetActive(false);
 
             arma02Texto.transform.SetParent(padreTexto);
 

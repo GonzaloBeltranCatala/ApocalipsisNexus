@@ -10,6 +10,7 @@ TagManager:
   - Tienda
   - Arma
   - Laser
+  - Estaca
   layers:
   - Default
   - TransparentFX

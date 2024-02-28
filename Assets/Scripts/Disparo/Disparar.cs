@@ -6,27 +6,41 @@ using TMPro;
 public class Disparar : MonoBehaviour
 {
     public Selector scriptSelector;
-
+//pistola
     public GameObject prefab;
-
-    public GameObject prefabLaser;
 
     public Transform insPoint;
 
-    public TextMeshProUGUI municionPistolaText;
+     public TextMeshProUGUI municionPistolaText;
+
+     public int municionPistola = 60;
+
+//laser
+    public GameObject prefabLaser;
 
     public TextMeshProUGUI municionText;
 
-    public int municionPistola = 60;
-
     public int municionLaser = 10;
+
+
+//estacas
+    
+    public GameObject prefabEstaca;
+
+     public TextMeshProUGUI municionEstacaText;
+
+     public int municionEstaca = 200;
+   
+
+    
+
+
 
     private int caja = 10;
 
     public AbrirTienda scriptTienda;
 
 
-    private Vector2 moveInput;
 
 
     private void OnDisparar()
@@ -39,7 +53,7 @@ public class Disparar : MonoBehaviour
                 if (municionPistola > 0)
                 {
 
-                    //que voy a instanciar,donde, no rota
+                    
                     Instantiate(prefab, insPoint.position, insPoint.rotation);
 
                     municionPistola--;
@@ -49,28 +63,37 @@ public class Disparar : MonoBehaviour
 
             }
 
-        }
-
-
-    }
-  
-      
-    private void OnDispararHold(){
-
             if (scriptSelector.armas == 1)
             {
                 if (municionLaser > 0)
                 {
 
-                    //que voy a instanciar,donde, no rota
+                  
                     Instantiate(prefabLaser, insPoint.position, insPoint.rotation);
 
                     municionLaser--;
                     municionText.text = municionLaser + "";
                 }
             }
-        
+
+            if(scriptSelector.armas == 2){
+
+                if (municionEstaca > 0)
+                {
+
+                    Instantiate(prefabEstaca, insPoint.position, insPoint.rotation);
+
+                    municionEstaca--;
+                    municionEstacaText.text = municionEstaca + "";
+                }
+
+            }
+
+        }
+
+
     }
+  
 
     private void OnTriggerEnter(Collider collision)
     {
@@ -87,6 +110,13 @@ public class Disparar : MonoBehaviour
             {
                 municionLaser = municionLaser + caja;
                 municionText.text = municionLaser + "";
+
+            }
+
+            if (scriptSelector.armas == 2)
+            {
+                municionEstaca = municionEstaca + caja;
+                municionEstacaText.text = municionEstaca + "";
 
             }
 
