@@ -36,13 +36,16 @@ public class Tienda : MonoBehaviour
 
     public GameObject textoObtener;
 
+    private AudioSource sonido;
+
+    public AudioClip clip;
 
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        sonido = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -61,6 +64,8 @@ public class Tienda : MonoBehaviour
     {
 
         if(puntos >= 10 ){
+
+            sonido.PlayOneShot(clip);
 
             //Instantiate(arma01, insPointArma.position, Quaternion.identity, padreArma).SetActive(false);
 
@@ -99,6 +104,8 @@ public class Tienda : MonoBehaviour
     public void ComprarArma02(){
 
          if(puntos >= 10 ){
+
+            sonido.PlayOneShot(clip);
 
             //Instantiate(arma02, insPointArma.position, Quaternion.identity, padreArma).SetActive(false);
 
