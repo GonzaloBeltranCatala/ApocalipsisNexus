@@ -10,11 +10,24 @@ public class StartGame : MonoBehaviour
     public GameObject cinematica1;
     public GameObject cinematica2;
     public GameObject cinematica3;
-    
+
+
+    private AudioSource sonido;
+
+    public AudioClip clip;
+
+    void Start()
+    {
+        sonido = GetComponent<AudioSource>();
+    }
+
+
     public void StartButton()
     {
+      
+        sonido.PlayOneShot(clip);
 
-         Time.timeScale = 1;
+        Time.timeScale = 1;
 
          StartCoroutine(Sequence());
 
@@ -26,6 +39,7 @@ public class StartGame : MonoBehaviour
 
     private IEnumerator Sequence()
     {
+
 
         cinematica1.SetActive(true);
 
