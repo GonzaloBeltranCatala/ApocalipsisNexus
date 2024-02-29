@@ -13,6 +13,8 @@ public class EnemigoDamage : MonoBehaviour
 
     public GameObject explosion;
 
+    public GameObject congelado;
+
     public Transform insPoint;
 
     private int vida = 100;
@@ -68,8 +70,11 @@ public class EnemigoDamage : MonoBehaviour
 
             if (vida <= 0)
             {
+                
+                Instantiate(congelado, insPoint.position, Quaternion.identity);
+
                 scriptTienda.ActualizarPuntos();
-                Destroy(gameObject);
+                Destroy(gameObject,0.1f);
             }
         }
     }
