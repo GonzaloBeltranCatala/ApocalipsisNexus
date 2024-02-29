@@ -7,10 +7,22 @@ public class MenuPausa : MonoBehaviour
 {
     public GameObject ObjetoMenuPausa;
     public bool Pausa = false;
+
+
+    private AudioSource sonido;
+
+    public AudioClip clip;
+
+
     // Start is called before the first frame update
     void Start()
     {
         ObjetoMenuPausa.SetActive(false);
+        
+        
+        sonido = GetComponent<AudioSource>();
+        
+
     }
 
     // Update is called once per frame
@@ -20,6 +32,9 @@ public class MenuPausa : MonoBehaviour
         { 
             if (Pausa == false)
             {
+                sonido.PlayOneShot(clip);
+
+
                 ObjetoMenuPausa.SetActive(true);
                 Pausa = true;
 
@@ -38,6 +53,8 @@ public class MenuPausa : MonoBehaviour
 
     public void Resumir()
     {
+        sonido.PlayOneShot(clip);
+
         ObjetoMenuPausa.SetActive(false);
         Pausa = false;
 

@@ -9,10 +9,19 @@ public class Controles : MonoBehaviour
 
     public GameObject botonAtras;
 
-    
+
+    private AudioSource sonido;
+
+    public AudioClip clip;
+    void Start()
+    {
+        sonido = GetComponent<AudioSource>();
+    }
+
 
     public void pulsar()
     {
+        sonido.PlayOneShot(clip);
 
         controlesImg.SetActive(true);
 
@@ -22,6 +31,8 @@ public class Controles : MonoBehaviour
 
     public void atras()
     {
+        sonido.PlayOneShot(clip);
+
         controlesImg.SetActive(false);
 
         botonAtras.SetActive(false);
