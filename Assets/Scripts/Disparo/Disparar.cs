@@ -42,6 +42,8 @@ public class Disparar : MonoBehaviour
 
     public AbrirTienda scriptTienda;
 
+    public MenuPausa scriptPausa;
+
 
 void Start()
 {
@@ -51,7 +53,7 @@ void Start()
     private void OnDisparar()
     {
 
-        if (scriptTienda.abrirTienda == false)
+        if (scriptTienda.abrirTienda == false && scriptPausa.Pausa == false)
         {
             if (scriptSelector.armas == 0)
             {
