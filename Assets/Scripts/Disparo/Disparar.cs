@@ -32,7 +32,9 @@ public class Disparar : MonoBehaviour
      public int municionEstaca = 200;
    
 
-    
+    private AudioSource sonido;
+
+    public AudioClip clip;
 
 
 
@@ -41,7 +43,10 @@ public class Disparar : MonoBehaviour
     public AbrirTienda scriptTienda;
 
 
-
+void Start()
+{
+    sonido = GetComponent<AudioSource>();
+}
 
     private void OnDisparar()
     {
@@ -103,7 +108,7 @@ public class Disparar : MonoBehaviour
         {
             if (scriptSelector.armas == 0)
             {
-                // audio 
+                sonido.PlayOneShot(clip);
                 municionPistola = municionPistola + caja;
                 municionPistolaText.text = municionPistola + "";
 
@@ -111,7 +116,7 @@ public class Disparar : MonoBehaviour
 
             if (scriptSelector.armas == 1)
             {
-                // audio 
+                sonido.PlayOneShot(clip);
                 municionLaser = municionLaser + caja;
                 municionText.text = municionLaser + "";
 
@@ -119,7 +124,7 @@ public class Disparar : MonoBehaviour
 
             if (scriptSelector.armas == 2)
             {
-                // audio 
+                sonido.PlayOneShot(clip);
                 municionEstaca = municionEstaca + caja;
                 municionEstacaText.text = municionEstaca + "";
 
