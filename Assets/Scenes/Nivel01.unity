@@ -29621,7 +29621,7 @@ PrefabInstance:
     - target: {fileID: 6426020061470090734, guid: c62700998e152c04caf87b3620ca2fee, type: 3}
       propertyPath: arma02
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 5484996163439922148, guid: 254d647bd6f2cc0479ad3658f402fdae, type: 3}
     - target: {fileID: 6426020061470090734, guid: c62700998e152c04caf87b3620ca2fee, type: 3}
       propertyPath: pistola
       value: 
