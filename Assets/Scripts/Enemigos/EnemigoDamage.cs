@@ -8,8 +8,8 @@ public class EnemigoDamage : MonoBehaviour
     public Slider vidaText;
     public Tienda scriptTienda;
     public Image imagenCanvas;
-    public Sprite mirillaenemigo;
-    public Sprite mirilla;
+    public GameObject mirillaenemigo;
+    public GameObject mirilla;
 
     public GameObject explosion;
 
@@ -18,12 +18,6 @@ public class EnemigoDamage : MonoBehaviour
     public Transform insPoint;
 
     private int vida = 100;
-
-    private void Start()
-    {
-        imagenCanvas.sprite = mirilla;  // volver a la imagen original 
-
-    }
 
     private void OnTriggerEnter(Collider collision)
     {
@@ -41,6 +35,11 @@ public class EnemigoDamage : MonoBehaviour
 
 
                 scriptTienda.ActualizarPuntos();
+
+
+                mirilla.SetActive(true);
+                mirillaenemigo.SetActive(false);
+
                 Destroy(gameObject,0.1f);
             }
         }
@@ -57,6 +56,10 @@ public class EnemigoDamage : MonoBehaviour
                 Instantiate(explosion, insPoint.position, Quaternion.identity);
 
                 scriptTienda.ActualizarPuntos();
+
+                mirilla.SetActive(true);
+                mirillaenemigo.SetActive(false);
+
                 Destroy(gameObject,0.1f);
             }
         }
@@ -73,6 +76,9 @@ public class EnemigoDamage : MonoBehaviour
                 
                 Instantiate(congelado, insPoint.position, Quaternion.identity);
 
+                mirilla.SetActive(true);
+                mirillaenemigo.SetActive(false);
+
                 scriptTienda.ActualizarPuntos();
                 Destroy(gameObject,0.1f);
             }
@@ -81,10 +87,15 @@ public class EnemigoDamage : MonoBehaviour
 
     IEnumerator CambiarImagen()
     {
-        // Cambia la imagen del canvas durante un corto tiempo
-        imagenCanvas.sprite = mirillaenemigo;
+        mirillaenemigo.SetActive(true);
+        
+        mirilla.SetActive(false);
+        
         yield return new WaitForSeconds(0.5f); //duracion cambio
-        imagenCanvas.sprite = mirilla;  // volver a la imagen original 
+        mirilla.SetActive(true);
+        
+        mirillaenemigo.SetActive(false);
+        
 
     }
 }

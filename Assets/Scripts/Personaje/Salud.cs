@@ -18,6 +18,8 @@ public class Salud : MonoBehaviour
 
     public AudioClip clip;
 
+    public bool muerte = false;
+
 
 
     public void Start()
@@ -44,6 +46,8 @@ public class Salud : MonoBehaviour
                 
                 menuDerrota.SetActive(true); // Activar el objeto del men� de derrota
                 
+                muerte = true;
+
                 Time.timeScale = 0f;
                 Cursor.visible = true;
                 Cursor.lockState = CursorLockMode.None;
@@ -54,6 +58,9 @@ public class Salud : MonoBehaviour
 
              menuDerrota.SetActive(true); // Activar el objeto del men� de derrota
                 
+                muerte = true;
+
+
                 Time.timeScale = 0f;
                 Cursor.visible = true;
                 Cursor.lockState = CursorLockMode.None;
@@ -68,5 +75,6 @@ public class Salud : MonoBehaviour
 
             vidaText.value = salud;
         }
+
     }
 }

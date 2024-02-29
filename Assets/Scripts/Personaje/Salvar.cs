@@ -10,7 +10,7 @@ public class Salvar : MonoBehaviour
 
     public GameObject victoria;
    
-
+    public bool ganar = false;
 
 
     private void OnTienda()
@@ -18,6 +18,8 @@ public class Salvar : MonoBehaviour
         if (salvarText.activeSelf)
         {
              victoria.SetActive(true);
+
+            ganar = true;
 
             Cursor.lockState = CursorLockMode.None;
 
