@@ -38,6 +38,8 @@ public class Cronometro : MonoBehaviour
 
                 cronometro = false;
 
+                //SceneManager.LoadScene("Nivel01");
+
             }
 
         }

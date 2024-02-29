@@ -11,7 +11,7 @@ public class DestruirBala : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        if (collision.CompareTag("Enemigo"))
+        if (collision.CompareTag("Enemigo") || collision.CompareTag("Muro"))
         {
             Instantiate(impacto, insPoint.position, insPoint.rotation);
 

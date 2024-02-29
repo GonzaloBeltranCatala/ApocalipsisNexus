@@ -11,6 +11,9 @@ TagManager:
   - Arma
   - Laser
   - Estaca
+  - PlayerEyes
+  - Muro
+  - Hermano
   layers:
   - Default
   - TransparentFX

@@ -54,7 +54,7 @@ public class Tienda : MonoBehaviour
     public void ActualizarPuntos()
     {
         puntos = puntos + 5;
-        puntosText.text = "Puntos: " + puntos;
+        puntosText.text = "" + puntos;
     }
 
     public void ComprarArma()
@@ -76,7 +76,7 @@ public class Tienda : MonoBehaviour
 
         puntos = puntos - 10;
 
-        puntosText.text = "Puntos: " + puntos;
+        puntosText.text = "" + puntos;
 
 
         arma01Boton.SetActive(false);
@@ -108,13 +108,15 @@ public class Tienda : MonoBehaviour
 
             Instantiate(arma02, insPointArma.position, padreArma.rotation, padreArma).SetActive(false);
 
+            arma02.transform.Rotate(0, -90, 0);
+
             arma02Texto.transform.SetParent(padreTexto);
 
         arma02Texto.SetActive(false);
 
         puntos = puntos - 10;
 
-        puntosText.text = "Puntos: " + puntos;
+        puntosText.text = "" + puntos;
 
 
         arma02Boton.SetActive(false);
