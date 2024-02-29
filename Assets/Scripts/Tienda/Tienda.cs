@@ -108,7 +108,7 @@ public class Tienda : MonoBehaviour
 
             Instantiate(arma02, insPointArma.position, padreArma.rotation, padreArma).SetActive(false);
 
-            arma02.transform.Rotate(0, -90, 0);
+            //arma02.transform.Rotate(0, -90, 0);
 
             arma02Texto.transform.SetParent(padreTexto);
 

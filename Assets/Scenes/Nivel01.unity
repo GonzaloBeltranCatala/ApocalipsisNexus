@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -29159,7 +29159,7 @@ PrefabInstance:
     - target: {fileID: 6426020061470090734, guid: c62700998e152c04caf87b3620ca2fee, type: 3}
       propertyPath: arma02
       value: 
-      objectReference: {fileID: 2036010604860898508, guid: 30900c79f7941da4caac74201ce02cbe, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 6426020061470090734, guid: c62700998e152c04caf87b3620ca2fee, type: 3}
       propertyPath: pistola
       value: 
@@ -29272,6 +29272,10 @@ PrefabInstance:
     - target: {fileID: 1265967004917754586, guid: 6dacecf45aa001d459a57d8faa704083, type: 3}
       propertyPath: m_Name
       value: Personaje
+      objectReference: {fileID: 0}
+    - target: {fileID: 1881084392494541315, guid: 6dacecf45aa001d459a57d8faa704083, type: 3}
+      propertyPath: movementSpeed
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4985132201755920106, guid: 6dacecf45aa001d459a57d8faa704083, type: 3}
       propertyPath: m_Layer
