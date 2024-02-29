@@ -6,68 +6,67 @@ using UnityEngine.UI;
 public class EnemigoDamage : MonoBehaviour
 {
     public Slider vidaText;
+    public Tienda scriptTienda;
+    public Image imagenCanvas;
+    public Sprite mirillaenemigo;
+    public Sprite mirilla;
 
     private int vida = 100;
 
-    public Tienda scriptTienda;
+    private void Start()
+    {
+        imagenCanvas.sprite = mirilla;  // volver a la imagen original 
 
-   // public GameObject muerte;
-
-    
-
+    }
 
     private void OnTriggerEnter(Collider collision)
     {
         if (collision.CompareTag("Bala"))
         {
-            vida = vida - 20;
-
+            vida -= 20;
             vidaText.value = vida;
+            StartCoroutine(CambiarImagen());
 
             if (vida <= 0)
             {
-                //Instantiate(muerte);
-
                 scriptTienda.ActualizarPuntos();
-
-
                 Destroy(gameObject);
             }
         }
 
         if (collision.CompareTag("Laser"))
         {
-            vida = vida - 75;
-
+            vida -= 75;
             vidaText.value = vida;
+            StartCoroutine(CambiarImagen());
 
             if (vida <= 0)
             {
-               
                 scriptTienda.ActualizarPuntos();
-
-
                 Destroy(gameObject);
             }
         }
 
         if (collision.CompareTag("Estaca"))
         {
-            vida = vida - 30;
-
+            vida -= 30;
             vidaText.value = vida;
+            StartCoroutine(CambiarImagen());
 
             if (vida <= 0)
             {
-                
                 scriptTienda.ActualizarPuntos();
-
-
                 Destroy(gameObject);
             }
         }
+    }
 
-
+    IEnumerator CambiarImagen()
+    {
+        // Cambia la imagen del canvas durante un corto tiempo
+        imagenCanvas.sprite = mirillaenemigo;
+        yield return new WaitForSeconds(0.5f); //duracion cambio
+        imagenCanvas.sprite = mirilla;  // volver a la imagen original 
 
     }
 }

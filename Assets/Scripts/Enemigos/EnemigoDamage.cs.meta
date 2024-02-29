@@ -3,7 +3,12 @@ guid: 156b47afe52d7fb4e807f196199c9bae
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - vidaText: {instanceID: 0}
+  - scriptTienda: {instanceID: 0}
+  - imagenCanvas: {instanceID: 0}
+  - mirillaenemigo: {fileID: 21300000, guid: 12a87b3944f57ed4ab7bb139d76a2e3b, type: 3}
+  - mirilla: {fileID: 21300000, guid: cbef0c608493b074ab0fc98e895d91e7, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

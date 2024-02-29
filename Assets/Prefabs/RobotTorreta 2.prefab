@@ -280,7 +280,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3209645381945785015}
   m_LocalRotation: {x: -0.007330723, y: 0.000049259437, z: -0.0051827496, w: 0.9999597}
-  m_LocalPosition: {x: -0.25912175, y: 1.623, z: 0.40000004}
+  m_LocalPosition: {x: -0.39, y: 0.975, z: 0.137}
   m_LocalScale: {x: 1, y: 0.51409006, z: 1.4165}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -427,7 +427,7 @@ Transform:
   - {fileID: 4889775596978845527}
   - {fileID: 2224604995858529677}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &7125891400195497843
 Rigidbody:
@@ -523,8 +523,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vidaText: {fileID: 769936919182996810}
   scriptTienda: {fileID: 0}
-  muerte: {fileID: 1828176872806910, guid: 9b274cdcfbd45e041909dd9ce5b3f494, type: 3}
-  insPoint: {fileID: 0}
+  imagenCanvas: {fileID: 0}
+  mirillaenemigo: {fileID: 21300000, guid: 12a87b3944f57ed4ab7bb139d76a2e3b, type: 3}
+  mirilla: {fileID: 21300000, guid: cbef0c608493b074ab0fc98e895d91e7, type: 3}
 --- !u!1 &7384210808407005092
 GameObject:
   m_ObjectHideFlags: 0

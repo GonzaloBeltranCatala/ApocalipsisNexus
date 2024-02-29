@@ -400,19 +400,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c253b4e8b24a3e441b8388fa411c9b83, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c253b4e8b24a3e441b8388fa411c9b83, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 26.433844
+      value: 33.22664
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c253b4e8b24a3e441b8388fa411c9b83, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.20180273
+      value: -0.20180368
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c253b4e8b24a3e441b8388fa411c9b83, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -23.571945
+      value: -22.955994
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c253b4e8b24a3e441b8388fa411c9b83, type: 3}
       propertyPath: m_LocalRotation.w
@@ -577,6 +577,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vidaText: {fileID: 1964241043772643885}
   scriptTienda: {fileID: 0}
+  imagenCanvas: {fileID: 0}
+  mirillaenemigo: {fileID: 21300000, guid: 12a87b3944f57ed4ab7bb139d76a2e3b, type: 3}
+  mirilla: {fileID: 21300000, guid: cbef0c608493b074ab0fc98e895d91e7, type: 3}
 --- !u!4 &6195428160979854725 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: c253b4e8b24a3e441b8388fa411c9b83, type: 3}
