@@ -30,7 +30,7 @@ public class EnemigoDamage : MonoBehaviour
         if (collision.CompareTag("Bala"))
         {
             StartCoroutine(CambiarImagen());
-            vida -= 20;
+            vida -= 15;
             vidaText.value = vida;
             
 
@@ -48,7 +48,7 @@ public class EnemigoDamage : MonoBehaviour
         if (collision.CompareTag("Laser"))
         {
             StartCoroutine(CambiarImagen());
-            vida -= 75;
+            vida -= 35;
             vidaText.value = vida;
             
 
@@ -64,7 +64,7 @@ public class EnemigoDamage : MonoBehaviour
         if (collision.CompareTag("Estaca"))
         {
             StartCoroutine(CambiarImagen());
-            vida -= 30;
+            vida -= 100;
             vidaText.value = vida;
             
 

@@ -20,7 +20,7 @@ public class Disparar : MonoBehaviour
 
     public TextMeshProUGUI municionText;
 
-    public int municionLaser = 10;
+    public int municionLaser = 100;
 
 
 //estacas
@@ -29,7 +29,7 @@ public class Disparar : MonoBehaviour
 
      public TextMeshProUGUI municionEstacaText;
 
-     public int municionEstaca = 200;
+     public int municionEstaca = 10;
    
 
     private AudioSource sonido;
@@ -58,8 +58,6 @@ void Start()
                 if (municionPistola > 0)
                 {
 
-                    // audio 
-
                     Instantiate(prefab, insPoint.position, insPoint.rotation);
 
                     municionPistola--;
@@ -73,7 +71,6 @@ void Start()
             {
                 if (municionLaser > 0)
                 {
-                    // audio 
                   
                     Instantiate(prefabLaser, insPoint.position, insPoint.rotation);
 
@@ -86,7 +83,6 @@ void Start()
 
                 if (municionEstaca > 0)
                 {
-                    // audio 
 
                     Instantiate(prefabEstaca, insPoint.position, insPoint.rotation);
 

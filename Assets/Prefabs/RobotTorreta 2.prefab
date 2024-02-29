@@ -526,6 +526,9 @@ MonoBehaviour:
   imagenCanvas: {fileID: 0}
   mirillaenemigo: {fileID: 21300000, guid: 12a87b3944f57ed4ab7bb139d76a2e3b, type: 3}
   mirilla: {fileID: 21300000, guid: cbef0c608493b074ab0fc98e895d91e7, type: 3}
+  explosion: {fileID: 1828176872806910, guid: 9b274cdcfbd45e041909dd9ce5b3f494, type: 3}
+  congelado: {fileID: 4700918397072746509, guid: 00a30697640af174f9aea33e23d81e52, type: 3}
+  insPoint: {fileID: 4889775596978845527}
 --- !u!1 &7384210808407005092
 GameObject:
   m_ObjectHideFlags: 0

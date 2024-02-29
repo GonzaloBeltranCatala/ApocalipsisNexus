@@ -63,7 +63,7 @@ public class Tienda : MonoBehaviour
     public void ComprarArma()
     {
 
-        if(puntos >= 10 ){
+        if(puntos >= 50 ){
 
             sonido.PlayOneShot(clip);
 
@@ -79,7 +79,7 @@ public class Tienda : MonoBehaviour
 
         arma01Texto.SetActive(false);
 
-        puntos = puntos - 10;
+        puntos = puntos - 50;
 
         puntosText.text = "" + puntos;
 
@@ -103,7 +103,7 @@ public class Tienda : MonoBehaviour
 
     public void ComprarArma02(){
 
-         if(puntos >= 10 ){
+         if(puntos >= 55 ){
 
             sonido.PlayOneShot(clip);
 
@@ -121,7 +121,7 @@ public class Tienda : MonoBehaviour
 
         arma02Texto.SetActive(false);
 
-        puntos = puntos - 10;
+        puntos = puntos - 55;
 
         puntosText.text = "" + puntos;
 

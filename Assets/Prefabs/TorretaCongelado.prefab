@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8942972563912486568}
   - component: {fileID: 1487793880169276632}
   - component: {fileID: 815902334365855266}
+  - component: {fileID: 7980422370769275786}
   m_Layer: 0
   m_Name: TorretaCongelado
   m_TagString: Untagged
@@ -106,3 +107,16 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 8c7e90cd8231f9a4c9936aafd7ec1fed, type: 3}
+--- !u!114 &7980422370769275786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4700918397072746509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3825f67aef1ec1b46a31a390c1753d74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifetime: 2

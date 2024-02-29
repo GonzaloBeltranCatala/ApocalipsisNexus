@@ -12,11 +12,20 @@ public class Salud : MonoBehaviour
 
     private int salud = 100;
 
-    public GameObject menuDerrota; // Objeto del menú de derrota
+    public GameObject menuDerrota; // Objeto del menï¿½ de derrota
+
+    private AudioSource sonido;
+
+    public AudioClip clip;
+
+
 
     public void Start()
     {
         menuDerrota.SetActive(false);
+
+        sonido = GetComponent<AudioSource>();
+
     }
 
     private void OnTriggerEnter(Collider collision)
@@ -31,14 +40,33 @@ public class Salud : MonoBehaviour
 
             if (salud <= 0)
             {
-                // Implementar lógica de muerte
+                // Implementar lï¿½gica de muerte
                 
-                menuDerrota.SetActive(true); // Activar el objeto del menú de derrota
-                print("Perdiste");
+                menuDerrota.SetActive(true); // Activar el objeto del menï¿½ de derrota
+                
                 Time.timeScale = 0f;
                 Cursor.visible = true;
                 Cursor.lockState = CursorLockMode.None;
             }
+        }
+
+        if(collision.CompareTag("Trampas")){
+
+             menuDerrota.SetActive(true); // Activar el objeto del menï¿½ de derrota
+                
+                Time.timeScale = 0f;
+                Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.None;
+
+        }
+
+        if (collision.CompareTag("Botiquin"))
+        {
+            sonido.PlayOneShot(clip);
+            
+            salud += 10;
+
+            vidaText.value = salud;
         }
     }
 }
