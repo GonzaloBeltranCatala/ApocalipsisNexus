@@ -8,6 +8,7 @@ public class Salvar : MonoBehaviour
 
     public GameObject salvarText;
 
+    public GameObject victoria;
    
 
 
@@ -16,7 +17,10 @@ public class Salvar : MonoBehaviour
     {
         if (salvarText.activeSelf)
         {
-            print("ganaste");
+             victoria.SetActive(true);
+
+            Cursor.lockState = CursorLockMode.None;
+
         }
 
     }

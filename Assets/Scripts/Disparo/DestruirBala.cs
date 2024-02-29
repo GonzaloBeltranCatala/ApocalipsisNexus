@@ -13,6 +13,8 @@ public class DestruirBala : MonoBehaviour
     {
         if (collision.CompareTag("Enemigo") || collision.CompareTag("Muro"))
         {
+            // sonido
+            
             Instantiate(impacto, insPoint.position, insPoint.rotation);
 
             Destroy(gameObject);

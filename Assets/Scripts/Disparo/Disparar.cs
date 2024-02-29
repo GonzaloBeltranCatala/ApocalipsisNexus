@@ -53,7 +53,8 @@ public class Disparar : MonoBehaviour
                 if (municionPistola > 0)
                 {
 
-                    
+                    // audio 
+
                     Instantiate(prefab, insPoint.position, insPoint.rotation);
 
                     municionPistola--;
@@ -67,7 +68,7 @@ public class Disparar : MonoBehaviour
             {
                 if (municionLaser > 0)
                 {
-
+                    // audio 
                   
                     Instantiate(prefabLaser, insPoint.position, insPoint.rotation);
 
@@ -80,6 +81,7 @@ public class Disparar : MonoBehaviour
 
                 if (municionEstaca > 0)
                 {
+                    // audio 
 
                     Instantiate(prefabEstaca, insPoint.position, insPoint.rotation);
 
@@ -101,6 +103,7 @@ public class Disparar : MonoBehaviour
         {
             if (scriptSelector.armas == 0)
             {
+                // audio 
                 municionPistola = municionPistola + caja;
                 municionPistolaText.text = municionPistola + "";
 
@@ -108,6 +111,7 @@ public class Disparar : MonoBehaviour
 
             if (scriptSelector.armas == 1)
             {
+                // audio 
                 municionLaser = municionLaser + caja;
                 municionText.text = municionLaser + "";
 
@@ -115,6 +119,7 @@ public class Disparar : MonoBehaviour
 
             if (scriptSelector.armas == 2)
             {
+                // audio 
                 municionEstaca = municionEstaca + caja;
                 municionEstacaText.text = municionEstaca + "";
 

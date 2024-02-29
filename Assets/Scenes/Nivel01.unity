@@ -2448,6 +2448,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 178219587}
   m_CullTransparentMesh: 1
+--- !u!4 &204172168 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8488591156511535119, guid: 5f9b95eecd960d34e9d8e890be13108d, type: 3}
+  m_PrefabInstance: {fileID: 2118302746}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &209650604
 GameObject:
   m_ObjectHideFlags: 0
@@ -5417,6 +5422,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1288270793743400535, guid: ab6ad9a960c7de94b96d1f1f5bf6b1d1, type: 3}
+      propertyPath: insPoint
+      value: 
+      objectReference: {fileID: 1766881874}
+    - target: {fileID: 1288270793743400535, guid: ab6ad9a960c7de94b96d1f1f5bf6b1d1, type: 3}
+      propertyPath: explosion
+      value: 
+      objectReference: {fileID: 1828176872806910, guid: 9b274cdcfbd45e041909dd9ce5b3f494, type: 3}
     - target: {fileID: 6195428160979368357, guid: ab6ad9a960c7de94b96d1f1f5bf6b1d1, type: 3}
       propertyPath: m_Name
       value: RobotVolador Variant (1)
@@ -5465,6 +5478,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7056765277844349422, guid: ab6ad9a960c7de94b96d1f1f5bf6b1d1, type: 3}
+      propertyPath: insPoint
+      value: 
+      objectReference: {fileID: 1766881874}
+    - target: {fileID: 7056765277844349422, guid: ab6ad9a960c7de94b96d1f1f5bf6b1d1, type: 3}
+      propertyPath: explosion
+      value: 
+      objectReference: {fileID: 1828176872806910, guid: 9b274cdcfbd45e041909dd9ce5b3f494, type: 3}
     - target: {fileID: 7056765277844349422, guid: ab6ad9a960c7de94b96d1f1f5bf6b1d1, type: 3}
       propertyPath: imagenCanvas
       value: 
@@ -5729,6 +5750,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1288270793743400535, guid: ab6ad9a960c7de94b96d1f1f5bf6b1d1, type: 3}
+      propertyPath: insPoint
+      value: 
+      objectReference: {fileID: 1046206803}
+    - target: {fileID: 1288270793743400535, guid: ab6ad9a960c7de94b96d1f1f5bf6b1d1, type: 3}
+      propertyPath: explosion
+      value: 
+      objectReference: {fileID: 1828176872806910, guid: 9b274cdcfbd45e041909dd9ce5b3f494, type: 3}
     - target: {fileID: 6195428160979368357, guid: ab6ad9a960c7de94b96d1f1f5bf6b1d1, type: 3}
       propertyPath: m_Name
       value: RobotVolador Variant (4)
@@ -5777,6 +5806,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7056765277844349422, guid: ab6ad9a960c7de94b96d1f1f5bf6b1d1, type: 3}
+      propertyPath: insPoint
+      value: 
+      objectReference: {fileID: 1046206803}
+    - target: {fileID: 7056765277844349422, guid: ab6ad9a960c7de94b96d1f1f5bf6b1d1, type: 3}
+      propertyPath: explosion
+      value: 
+      objectReference: {fileID: 1828176872806910, guid: 9b274cdcfbd45e041909dd9ce5b3f494, type: 3}
     - target: {fileID: 7056765277844349422, guid: ab6ad9a960c7de94b96d1f1f5bf6b1d1, type: 3}
       propertyPath: imagenCanvas
       value: 
@@ -10561,6 +10598,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8021087281685983445, guid: 6dacecf45aa001d459a57d8faa704083, type: 3}
   m_PrefabInstance: {fileID: 8219640414952236682}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &885848784 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6195428160979854725, guid: ab6ad9a960c7de94b96d1f1f5bf6b1d1, type: 3}
+  m_PrefabInstance: {fileID: 1754330683}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &928744838
 GameObject:
   m_ObjectHideFlags: 0
@@ -10579,7 +10621,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &928744839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12760,6 +12802,11 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!4 &1046206803 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6195428160979854725, guid: ab6ad9a960c7de94b96d1f1f5bf6b1d1, type: 3}
+  m_PrefabInstance: {fileID: 472053898}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1050897944
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12768,6 +12815,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1288270793743400535, guid: ab6ad9a960c7de94b96d1f1f5bf6b1d1, type: 3}
+      propertyPath: insPoint
+      value: 
+      objectReference: {fileID: 1266861857}
+    - target: {fileID: 1288270793743400535, guid: ab6ad9a960c7de94b96d1f1f5bf6b1d1, type: 3}
+      propertyPath: explosion
+      value: 
+      objectReference: {fileID: 1828176872806910, guid: 9b274cdcfbd45e041909dd9ce5b3f494, type: 3}
     - target: {fileID: 6195428160979368357, guid: ab6ad9a960c7de94b96d1f1f5bf6b1d1, type: 3}
       propertyPath: m_Name
       value: RobotVolador Variant (3)
@@ -12816,6 +12871,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7056765277844349422, guid: ab6ad9a960c7de94b96d1f1f5bf6b1d1, type: 3}
+      propertyPath: insPoint
+      value: 
+      objectReference: {fileID: 1266861857}
+    - target: {fileID: 7056765277844349422, guid: ab6ad9a960c7de94b96d1f1f5bf6b1d1, type: 3}
+      propertyPath: explosion
+      value: 
+      objectReference: {fileID: 1828176872806910, guid: 9b274cdcfbd45e041909dd9ce5b3f494, type: 3}
     - target: {fileID: 7056765277844349422, guid: ab6ad9a960c7de94b96d1f1f5bf6b1d1, type: 3}
       propertyPath: imagenCanvas
       value: 
@@ -15451,6 +15514,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1261567822}
   m_CullTransparentMesh: 1
+--- !u!4 &1266861857 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6195428160979854725, guid: ab6ad9a960c7de94b96d1f1f5bf6b1d1, type: 3}
+  m_PrefabInstance: {fileID: 1050897944}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &1267166493
 Mesh:
   m_ObjectHideFlags: 0
@@ -15634,6 +15702,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   salvarText: {fileID: 625404167}
+  victoria: {fileID: 928744838}
 --- !u!1 &1277647945
 GameObject:
   m_ObjectHideFlags: 0
@@ -17807,6 +17876,14 @@ PrefabInstance:
       propertyPath: mirilla
       value: 
       objectReference: {fileID: 21300000, guid: cbef0c608493b074ab0fc98e895d91e7, type: 3}
+    - target: {fileID: 7609733778886283626, guid: 295f3cdf5feade2418a060bec89e3cc3, type: 3}
+      propertyPath: insPoint
+      value: 
+      objectReference: {fileID: 4361801158873524, guid: 9b274cdcfbd45e041909dd9ce5b3f494, type: 3}
+    - target: {fileID: 7609733778886283626, guid: 295f3cdf5feade2418a060bec89e3cc3, type: 3}
+      propertyPath: explosion
+      value: 
+      objectReference: {fileID: 1719655794}
     - target: {fileID: 7609733778886283626, guid: 295f3cdf5feade2418a060bec89e3cc3, type: 3}
       propertyPath: imagenCanvas
       value: 
@@ -23067,6 +23144,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1719655794 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3757080455550246143, guid: 295f3cdf5feade2418a060bec89e3cc3, type: 3}
+  m_PrefabInstance: {fileID: 1385519519}
+  m_PrefabAsset: {fileID: 0}
 --- !u!850595691 &1725747902
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -23407,6 +23489,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1288270793743400535, guid: ab6ad9a960c7de94b96d1f1f5bf6b1d1, type: 3}
+      propertyPath: insPoint
+      value: 
+      objectReference: {fileID: 885848784}
+    - target: {fileID: 1288270793743400535, guid: ab6ad9a960c7de94b96d1f1f5bf6b1d1, type: 3}
+      propertyPath: explosion
+      value: 
+      objectReference: {fileID: 1828176872806910, guid: 9b274cdcfbd45e041909dd9ce5b3f494, type: 3}
     - target: {fileID: 6195428160979368357, guid: ab6ad9a960c7de94b96d1f1f5bf6b1d1, type: 3}
       propertyPath: m_Name
       value: RobotVolador Variant (2)
@@ -23455,6 +23545,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7056765277844349422, guid: ab6ad9a960c7de94b96d1f1f5bf6b1d1, type: 3}
+      propertyPath: insPoint
+      value: 
+      objectReference: {fileID: 885848784}
+    - target: {fileID: 7056765277844349422, guid: ab6ad9a960c7de94b96d1f1f5bf6b1d1, type: 3}
+      propertyPath: explosion
+      value: 
+      objectReference: {fileID: 1828176872806910, guid: 9b274cdcfbd45e041909dd9ce5b3f494, type: 3}
     - target: {fileID: 7056765277844349422, guid: ab6ad9a960c7de94b96d1f1f5bf6b1d1, type: 3}
       propertyPath: imagenCanvas
       value: 
@@ -23768,6 +23866,11 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!4 &1766881874 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6195428160979854725, guid: ab6ad9a960c7de94b96d1f1f5bf6b1d1, type: 3}
+  m_PrefabInstance: {fileID: 437690890}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1767520218
 GameObject:
   m_ObjectHideFlags: 0
@@ -29702,6 +29805,14 @@ PrefabInstance:
       propertyPath: playerTransform
       value: 
       objectReference: {fileID: 885145506}
+    - target: {fileID: 3917467710107019984, guid: 5f9b95eecd960d34e9d8e890be13108d, type: 3}
+      propertyPath: insPoint
+      value: 
+      objectReference: {fileID: 204172168}
+    - target: {fileID: 3917467710107019984, guid: 5f9b95eecd960d34e9d8e890be13108d, type: 3}
+      propertyPath: explosion
+      value: 
+      objectReference: {fileID: 1828176872806910, guid: 9b274cdcfbd45e041909dd9ce5b3f494, type: 3}
     - target: {fileID: 3917467710107019984, guid: 5f9b95eecd960d34e9d8e890be13108d, type: 3}
       propertyPath: imagenCanvas
       value: 

@@ -11,6 +11,10 @@ public class EnemigoDamage : MonoBehaviour
     public Sprite mirillaenemigo;
     public Sprite mirilla;
 
+    public GameObject explosion;
+
+    public Transform insPoint;
+
     private int vida = 100;
 
     private void Start()
@@ -23,35 +27,44 @@ public class EnemigoDamage : MonoBehaviour
     {
         if (collision.CompareTag("Bala"))
         {
+            StartCoroutine(CambiarImagen());
             vida -= 20;
             vidaText.value = vida;
-            StartCoroutine(CambiarImagen());
+            
 
             if (vida <= 0)
             {
+                
+            Instantiate(explosion, insPoint.position, Quaternion.identity);
+
+
                 scriptTienda.ActualizarPuntos();
-                Destroy(gameObject);
+                Destroy(gameObject,0.1f);
             }
         }
 
         if (collision.CompareTag("Laser"))
         {
+            StartCoroutine(CambiarImagen());
             vida -= 75;
             vidaText.value = vida;
-            StartCoroutine(CambiarImagen());
+            
 
             if (vida <= 0)
             {
+                Instantiate(explosion, insPoint.position, Quaternion.identity);
+
                 scriptTienda.ActualizarPuntos();
-                Destroy(gameObject);
+                Destroy(gameObject,0.1f);
             }
         }
 
         if (collision.CompareTag("Estaca"))
         {
+            StartCoroutine(CambiarImagen());
             vida -= 30;
             vidaText.value = vida;
-            StartCoroutine(CambiarImagen());
+            
 
             if (vida <= 0)
             {

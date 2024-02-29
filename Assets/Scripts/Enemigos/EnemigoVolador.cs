@@ -14,6 +14,13 @@ public class EnemigoVolador : MonoBehaviour
 
     public GameObject vida;
 
+
+    public GameObject explosion;
+
+    public Transform insPoint;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -86,7 +93,10 @@ public class EnemigoVolador : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            Destroy(gameObject);
+            
+            Instantiate(explosion, insPoint.position, Quaternion.identity);
+
+            Destroy(gameObject,0.1f);
         }
     }
 }
